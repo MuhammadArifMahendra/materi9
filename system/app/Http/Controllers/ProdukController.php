@@ -24,6 +24,7 @@ class ProdukController extends Controller{
 		$produk->harga = request('harga');
 		$produk->berat = request('berat');
 		$produk->deskripsi = request('deskripsi');
+		
 		$produk->handleUploadFoto();
 
 		$produk->save();
